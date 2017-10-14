@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class HappySpring {
 
     private static int quantityOfThings;
-    private static int bagpackACapacity;
-    private static int bagpackBCapacity;
+    private static int backpackACapacity;
+    private static int backpackBCapacity;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -21,8 +21,8 @@ public class HappySpring {
 
     private static void inputVariables(Scanner in) {
         quantityOfThings = in.nextInt();
-        bagpackACapacity = in.nextInt();
-        bagpackBCapacity = in.nextInt();
+        backpackACapacity = in.nextInt();
+        backpackBCapacity = in.nextInt();
         in.nextLine();
     }
 
