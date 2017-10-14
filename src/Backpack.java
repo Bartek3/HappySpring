@@ -1,4 +1,4 @@
-//Klasa przechowująca dane na temat plecaców
+//Klasa przechowująca dane na temat plecaków
 
 public class Backpack {
 
