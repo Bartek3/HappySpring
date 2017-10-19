@@ -4,12 +4,12 @@ public class Thing {
 
     private int number; //ID danej rzeczy
     private int value; //Wartość danej rzeczy
-    private int size; //Wymiary danej rzeczy
+    private int weight; //Wymiary danej rzeczy
 
-    public Thing(int number, int value, int size) {
+    public Thing(int number, int value, int weight) {
         this.number = number;
         this.value = value;
-        this.size = size;
+        this.weight = weight;
     }
 
     public int getNumber() {
@@ -20,12 +20,12 @@ public class Thing {
         return value;
     }
 
-    public int getSize() {
-        return size;
+    public int getWeight() {
+        return weight;
     }
 
     public double getRatio() {
-        return ((double) value) / ((double) size);
+        return ((double) value) / ((double) weight);
     }
 
 }

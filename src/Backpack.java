@@ -1,6 +1,8 @@
 //Klasa przechowująca dane na temat plecaków
 
-public class Backpack {
+import java.util.ArrayList;
+
+public class Backpack extends HappySpring{
 
     private int[] elements; //Tablica przechowująca ID przedmiotów znajdujących się w plecaku
     private int weight; //Waga przedmiotów znajdujących się w plecaku
@@ -22,6 +24,10 @@ public class Backpack {
 
     public int getBackpackValue() {
         return backpackValue;
+    }
+
+    public int getSumOfWeight(ArrayList<Thing> things, int[] elements){
+        return 0;
     }
 
 }
