@@ -12,20 +12,12 @@ public class Thing {
         this.weight = weight;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
     public int getValue() {
         return value;
     }
 
     public int getWeight() {
         return weight;
-    }
-
-    public double getRatio() {
-        return ((double) value) / ((double) weight);
     }
 
 }

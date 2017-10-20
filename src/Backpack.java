@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class Backpack extends HappySpring{
+public class Backpack extends HappySpring {
 
     private int[] elements; //Tablica przechowująca ID przedmiotów znajdujących się w plecaku
     private int weight; //Waga przedmiotów znajdujących się w plecaku
@@ -24,10 +24,6 @@ public class Backpack extends HappySpring{
 
     public int getBackpackValue() {
         return backpackValue;
-    }
-
-    public int getSumOfWeight(ArrayList<Thing> things, int[] elements){
-        return 0;
     }
 
 }
