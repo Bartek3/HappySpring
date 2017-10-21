@@ -36,8 +36,6 @@ public class HappySpring {
         //Wyznaczenie listy wszystkich możliwych konfiguracji dla plecaka B
         verifyBackpack(backpackBCapacity, backpacksB, backpacks);
 
-        System.out.println();
-
         //Obliczenie i wydrukowanie wyjścia programu
         results(backpacksA, backpacksB);
     }
@@ -47,7 +45,20 @@ public class HappySpring {
         quantityOfThings = in.nextInt();
         backpackACapacity = in.nextInt();
         backpackBCapacity = in.nextInt();
+
+        if (quantityOfThings <= 100) {
+            error("Quantity of things can't be larger than 100!");
+        }
+
+        if (backpackACapacity <= 500 | backpackBCapacity <= 500) {
+            error("Capacity of any backpack can't be larger than 500!");
+        }
         in.nextLine();
+    }
+
+    private static void error(String communicate){
+        System.out.println(communicate);
+        System.exit(0);
     }
 
     //Metoda dodająca rzeczy do odpowiedniej listy
@@ -99,6 +110,7 @@ public class HappySpring {
         int optionA = maxA.getBackpackValue() + AltMaxB.getBackpackValue();
         int optionB = maxB.getBackpackValue() + AltMaxA.getBackpackValue();
 
+        System.out.println();
         if (optionA >= optionB) {
             System.out.println(optionA);
             prettyArrayPrint(maxA.getElements());
