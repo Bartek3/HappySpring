@@ -46,11 +46,11 @@ public class HappySpring {
         backpackACapacity = in.nextInt();
         backpackBCapacity = in.nextInt();
 
-        if (quantityOfThings <= 100) {
+        if (quantityOfThings >= 100) {
             error("Quantity of things can't be larger than 100!");
         }
 
-        if (backpackACapacity <= 500 | backpackBCapacity <= 500) {
+        if (backpackACapacity >= 500 | backpackBCapacity >= 500) {
             error("Capacity of any backpack can't be larger than 500!");
         }
         in.nextLine();
